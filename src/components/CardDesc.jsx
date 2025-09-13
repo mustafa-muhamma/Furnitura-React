@@ -109,7 +109,7 @@ function ProductDetails() {
 
                     <p className="text-gray-700 leading-relaxed">{product.description}</p>
 
-                    <div className="flex gap-4 mt-4">
+                    <div className="flex flex-col md:flex-row gap-4 mt-4">
                         <button
                             onClick={() => dispatch(addToCart(product))}
                             className="flex items-center gap-2 px-6 py-3 bg-[#1C352D] text-[#F5C9B0] rounded-xl font-semibold hover:bg-[#F5C9B0] hover:text-[#1C352D] transition"

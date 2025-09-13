@@ -1,8 +1,8 @@
 function About() {
     return (
-        <section className="py-20 bg-[#A6B28B]" > {/* margin-top to avoid overlapping sticky navbar */}
+        <section className="py-20 bg-[#A6B28B]" > 
             <div className="container mx-auto px-4 flex flex-col  items-center text-center h-screen gap-6 justify-center">
-                <div className="aboutImg py-5" style={{width: '400px'}}>
+                <div className="aboutImg py-5 w-[320px] md:w-[400px]" >
                     <img
                         src="./logo.png"
                         alt="Logo"
@@ -10,7 +10,7 @@ function About() {
                     />
                 </div>
 
-                <h1 className="text-4xl font-bold text-gray-800">
+                <h1 className="text-3xl lg:text-4xl font-bold text-gray-800">
                     About Us
                 </h1>
                 <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
