@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* Reset body/html spacing & ensure full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+main {
+    flex: 1; 
+}
+
+/* Global styles */
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar styles */
+nav a {
+    color: #F9F6F3;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hero styles */
+header {
+    background-image: url('./assets/heroImg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    z-index: 0;
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Sticky navbar */
+.sticky {
+    background-color: #1C352D;
+    color: #F9F6F3;
+    transition: all 0.3s ease-in-out;
+}
